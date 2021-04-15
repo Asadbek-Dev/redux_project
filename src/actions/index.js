@@ -1,6 +1,6 @@
 const ADD_TODO = 'ADD_TODO'
 
-export const add_todo = (message) => ({
+export const addTodo = (message) => ({
     type: ADD_TODO,
     message,
     id: Math.random(),
@@ -8,9 +8,8 @@ export const add_todo = (message) => ({
 
 const DELETE_TODO = 'DELETE_TODO'
 
-export const add_todo = (message) => ({
-    type: ADD_TODO,
-    message,
+export const deleteTodo = (id) => ({
+    type: DELETE_TODO,
     id
 });
 
